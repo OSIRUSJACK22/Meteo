@@ -1,0 +1,512 @@
+/* ========================================
+   MÉTÉO VILLES AFRICAINES - PAGE À PROPOS
+   Charte Graphique Officielle - Design Moderne
+   ======================================== */
+
+/* --- VARIABLES CSS --- */
+:root {
+    --about-couleur-fond-principal: #0E1628;
+    --about-couleur-fond-secondaire: #1E3A5F;
+    --about-couleur-fond-tertiaire: #162440;
+    --about-couleur-accent-cyan: #38BDF8;
+    --about-couleur-accent-orange: #F97316;
+    --about-couleur-texte-principal: #FFFFFF;
+    --about-couleur-texte-secondaire: #B0D4E8;
+    --about-couleur-texte-muted: #6B8A9E;
+    --about-police-titres: 'Space Grotesk', sans-serif;
+    --about-police-corps: 'DM Sans', sans-serif;
+    --about-transition-douce: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- RESET CSS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- STYLES GÉNÉRAUX --- */
+body {
+    font-family: var(--about-police-corps);
+    background-color: var(--about-couleur-fond-principal);
+    color: var(--about-couleur-texte-principal);
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--about-police-titres);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--about-transition-douce);
+}
+
+/* --- HEADER & NAVIGATION --- */
+.about-header-main-container {
+    background-color: rgba(14, 22, 40, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+}
+
+.about-navigation-primary-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.about-navigation-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-shrink: 0;
+}
+
+.about-navigation-logo-icon {
+    font-size: 2rem;
+}
+
+.about-navigation-site-title {
+    font-size: 1.5rem;
+    background: linear-gradient(135deg, var(--about-couleur-accent-cyan), #60A5FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-navigation-menu-list {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.about-navigation-menu-item {
+    display: inline-block;
+}
+
+.about-navigation-menu-link {
+    font-family: var(--about-police-corps);
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--about-couleur-texte-secondaire);
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    transition: var(--about-transition-douce);
+}
+
+.about-navigation-menu-link:hover,
+.about-navigation-menu-link-active {
+    color: var(--about-couleur-accent-cyan);
+    background-color: rgba(56, 189, 248, 0.1);
+}
+
+/* --- CONTENU PRINCIPAL --- */
+.about-main-content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* --- HERO SECTION --- */
+.about-hero-section {
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(30, 58, 95, 0.5));
+    border-radius: 30px;
+    padding: 5rem 3rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.about-hero-content-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-hero-badge {
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--about-couleur-accent-cyan);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.about-hero-main-title {
+    font-size: 3.5rem;
+    background: linear-gradient(135deg, var(--about-couleur-accent-cyan), #60A5FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+}
+
+.about-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--about-couleur-texte-secondaire);
+    line-height: 1.8;
+}
+
+/* --- SECTIONS GÉNÉRIQUES --- */
+.about-section-header-container {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-section-badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--about-couleur-accent-cyan);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.about-section-title {
+    font-size: 2.5rem;
+    color: var(--about-couleur-texte-principal);
+    margin-bottom: 1rem;
+}
+
+.about-section-description {
+    font-size: 1.1rem;
+    color: var(--about-couleur-texte-secondaire);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* --- DESCRIPTION --- */
+.about-description-section {
+    margin-bottom: 4rem;
+}
+
+.about-description-card-container {
+    background: linear-gradient(135deg, var(--about-couleur-fond-secondaire), var(--about-couleur-fond-tertiaire));
+    border-radius: 25px;
+    padding: 3rem;
+    border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.about-description-text {
+    font-size: 1.15rem;
+    color: var(--about-couleur-texte-secondaire);
+    margin-bottom: 1.5rem;
+    line-height: 1.9;
+}
+
+.about-description-text:last-child {
+    margin-bottom: 0;
+}
+
+/* --- FONCTIONNALITÉS --- */
+.about-features-section {
+    margin-bottom: 4rem;
+}
+
+.about-features-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.about-feature-card-container {
+    background: linear-gradient(135deg, var(--about-couleur-fond-secondaire), var(--about-couleur-fond-tertiaire));
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+    transition: var(--about-transition-douce);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-feature-card-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--about-couleur-accent-cyan), var(--about-couleur-accent-orange));
+    opacity: 0;
+    transition: var(--about-transition-douce);
+}
+
+.about-feature-card-container:hover {
+    transform: translateY(-8px);
+    border-color: rgba(56, 189, 248, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.about-feature-card-container:hover::before {
+    opacity: 1;
+}
+
+.about-feature-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(96, 165, 250, 0.1));
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.about-feature-icon {
+    font-size: 3rem;
+}
+
+.about-feature-title {
+    font-size: 1.4rem;
+    color: var(--about-couleur-accent-cyan);
+    margin-bottom: 1rem;
+}
+
+.about-feature-description {
+    font-size: 1rem;
+    color: var(--about-couleur-texte-secondaire);
+    line-height: 1.7;
+}
+
+/* --- TECHNOLOGIES --- */
+.about-tech-section {
+    margin-bottom: 4rem;
+}
+
+.about-tech-stack-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.about-tech-category-wrapper {
+    background: linear-gradient(135deg, var(--about-couleur-fond-secondaire), var(--about-couleur-fond-tertiaire));
+    border-radius: 20px;
+    padding: 2.5rem;
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    transition: var(--about-transition-douce);
+}
+
+.about-tech-category-wrapper:hover {
+    border-color: rgba(56, 189, 248, 0.3);
+    transform: translateY(-5px);
+}
+
+.about-tech-category-title {
+    font-size: 1.4rem;
+    color: var(--about-couleur-accent-cyan);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(56, 189, 248, 0.3);
+}
+
+.about-tech-list {
+    list-style: none;
+}
+
+.about-tech-item {
+    padding: 0.8rem 0;
+    color: var(--about-couleur-texte-secondaire);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.1);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.about-tech-item:last-child {
+    border-bottom: none;
+}
+
+.about-tech-item:hover {
+    color: var(--about-couleur-accent-cyan);
+}
+
+/* --- ÉQUIPE --- */
+.about-team-section {
+    margin-bottom: 4rem;
+}
+
+.about-team-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.about-team-member-card {
+    background: linear-gradient(135deg, var(--about-couleur-fond-secondaire), var(--about-couleur-fond-tertiaire));
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+    transition: var(--about-transition-douce);
+    border: 1px solid rgba(56, 189, 248, 0.15);
+}
+
+.about-team-member-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(56, 189, 248, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.about-team-member-avatar-placeholder {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(96, 165, 250, 0.1));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 3.5rem;
+}
+
+.about-team-member-name {
+    font-size: 1.4rem;
+    color: var(--about-couleur-accent-cyan);
+    margin-bottom: 0.5rem;
+}
+
+.about-team-member-role {
+    font-size: 1rem;
+    color: var(--about-couleur-texte-muted);
+}
+
+/* --- CONTACT --- */
+.about-contact-section {
+    margin-bottom: 3rem;
+}
+
+.about-contact-card-container {
+    background: linear-gradient(135deg, var(--about-couleur-fond-secondaire), var(--about-couleur-fond-tertiaire));
+    border-radius: 25px;
+    padding: 3rem;
+    border: 1px solid rgba(56, 189, 248, 0.15);
+    text-align: center;
+}
+
+.about-contact-text {
+    font-size: 1.15rem;
+    color: var(--about-couleur-texte-secondaire);
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-contact-info-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.about-contact-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.about-contact-info-icon {
+    font-size: 2.5rem;
+}
+
+.about-contact-info-label {
+    font-size: 0.85rem;
+    color: var(--about-couleur-texte-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-contact-info-value {
+    font-size: 1.1rem;
+    color: var(--about-couleur-accent-cyan);
+    font-weight: 700;
+}
+
+/* --- FOOTER --- */
+.about-footer-main-container {
+    background-color: var(--about-couleur-fond-secondaire);
+    padding: 2rem;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(56, 189, 248, 0.1);
+}
+
+.about-footer-content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-footer-copyright-text {
+    color: var(--about-couleur-texte-muted);
+    font-size: 0.9rem;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .about-header-main-container {
+        padding: 1rem;
+    }
+
+    .about-navigation-primary-menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-navigation-menu-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .about-hero-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .about-hero-main-title {
+        font-size: 2.2rem;
+    }
+
+    .about-hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .about-section-title {
+        font-size: 1.8rem;
+    }
+
+    .about-description-card-container,
+    .about-contact-card-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .about-contact-info-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-features-grid-container,
+    .about-tech-stack-container,
+    .about-team-grid-container {
+        grid-template-columns: 1fr;
+    }
+}

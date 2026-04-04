@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo Villes Africaines - Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-dashboard.css">
+</head>
+<body>
+    <header class="dashboard-header-main-container">
+        <nav class="dashboard-navigation-primary-menu">
+            <div class="dashboard-navigation-logo-container">
+                <span class="dashboard-navigation-logo-icon">🌡️</span>
+                <h1 class="dashboard-navigation-site-title">Météo Afrique</h1>
+            </div>
+            <ul class="dashboard-navigation-menu-list">
+                <li class="dashboard-navigation-menu-item"><a href="index.html" class="dashboard-navigation-menu-link">Accueil</a></li>
+                <li class="dashboard-navigation-menu-item"><a href="dashboard.html" class="dashboard-navigation-menu-link dashboard-navigation-menu-link-active">Dashboard</a></li>
+                <li class="dashboard-navigation-menu-item"><a href="map.html" class="dashboard-navigation-menu-link">Carte</a></li>
+                <li class="dashboard-navigation-menu-item"><a href="forecast.html" class="dashboard-navigation-menu-link">Prévisions</a></li>
+                <li class="dashboard-navigation-menu-item"><a href="compare.html" class="dashboard-navigation-menu-link">Comparaison</a></li>
+                <li class="dashboard-navigation-menu-item"><a href="about.html" class="dashboard-navigation-menu-link">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dashboard-main-content-wrapper">
+        <aside class="dashboard-sidebar-city-selector">
+            <h2 class="dashboard-sidebar-title">Sélectionner une ville</h2>
+            <ul class="dashboard-sidebar-city-list">
+                <li class="dashboard-sidebar-city-item dashboard-sidebar-city-item-active">Dakar</li>
+                <li class="dashboard-sidebar-city-item">Abidjan</li>
+                <li class="dashboard-sidebar-city-item">Casablanca</li>
+                <li class="dashboard-sidebar-city-item">Le Cap</li>
+                <li class="dashboard-sidebar-city-item">Lagos</li>
+                <li class="dashboard-sidebar-city-item">Nairobi</li>
+                <li class="dashboard-sidebar-city-item">Le Caire</li>
+                <li class="dashboard-sidebar-city-item">Tunis</li>
+                <li class="dashboard-sidebar-city-item">Porto-Novo</li>
+                <li class="dashboard-sidebar-city-item">Cotonou</li>
+            </ul>
+        </aside>
+
+        <section class="dashboard-content-main-area">
+            <div class="dashboard-header-info-section">
+                <h2 class="dashboard-city-name-display">Dakar, Sénégal</h2>
+                <p class="dashboard-current-date-display">Lundi 30 Mars 2026</p>
+            </div>
+
+            <div class="dashboard-weather-main-grid">
+                <article class="dashboard-weather-card-primary">
+                    <div class="dashboard-weather-card-icon-container">
+                        <span class="dashboard-weather-card-icon">☀️</span>
+                    </div>
+                    <div class="dashboard-weather-card-content-wrapper">
+                        <p class="dashboard-weather-card-condition">Ensoleillé</p>
+                        <p class="dashboard-weather-card-temperature-value">28°C</p>
+                        <p class="dashboard-weather-card-feels-like">Ressenti 30°C</p>
+                    </div>
+                </article>
+
+                <article class="dashboard-weather-card-secondary">
+                    <h3 class="dashboard-weather-card-secondary-title">Détails</h3>
+                    <div class="dashboard-weather-details-grid">
+                        <div class="dashboard-weather-detail-item">
+                            <span class="dashboard-weather-detail-icon">💧</span>
+                            <span class="dashboard-weather-detail-label">Humidité</span>
+                            <span class="dashboard-weather-detail-value">65%</span>
+                        </div>
+                        <div class="dashboard-weather-detail-item">
+                            <span class="dashboard-weather-detail-icon">💨</span>
+                            <span class="dashboard-weather-detail-label">Vent</span>
+                            <span class="dashboard-weather-detail-value">15 km/h</span>
+                        </div>
+                        <div class="dashboard-weather-detail-item">
+                            <span class="dashboard-weather-detail-icon">🌡️</span>
+                            <span class="dashboard-weather-detail-label">Max</span>
+                            <span class="dashboard-weather-detail-value">32°C</span>
+                        </div>
+                        <div class="dashboard-weather-detail-item">
+                            <span class="dashboard-weather-detail-icon">🌙</span>
+                            <span class="dashboard-weather-detail-label">Min</span>
+                            <span class="dashboard-weather-detail-value">24°C</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="dashboard-widgets-main-container">
+                <article class="dashboard-wind-widget-container">
+                    <h3 class="dashboard-wind-widget-title">Vent & Humidité</h3>
+                    <div class="dashboard-wind-widget-content-wrapper">
+                        <div class="dashboard-wind-widget-speed-display">
+                            <div class="dashboard-wind-widget-compass-icon">🧭</div>
+                            <p class="dashboard-wind-widget-speed-value">15 km/h</p>
+                            <p class="dashboard-wind-widget-direction">Nord-Est</p>
+                        </div>
+                        <div class="dashboard-wind-widget-humidity-display">
+                            <div class="dashboard-wind-widget-drop-icon">💧</div>
+                            <p class="dashboard-wind-widget-humidity-value">65%</p>
+                            <p class="dashboard-wind-widget-humidity-label">Humidité</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="dashboard-temperature-graph-container">
+                    <h3 class="dashboard-temperature-graph-title">Évolution des Températures</h3>
+                    <div class="dashboard-temperature-graph-wrapper">
+                        <div class="dashboard-temperature-graph-bars-container">
+                            <div class="dashboard-temperature-graph-bar-item">
+                                <span class="dashboard-temperature-graph-bar" style="--bar-height: 60%"></span>
+                                <span class="dashboard-temperature-graph-label">00h</span>
+                                <span class="dashboard-temperature-graph-value">24°C</span>
+                            </div>
+                            <div class="dashboard-temperature-graph-bar-item">
+                                <span class="dashboard-temperature-graph-bar" style="--bar-height: 55%"></span>
+                                <span class="dashboard-temperature-graph-label">04h</span>
+                                <span class="dashboard-temperature-graph-value">23°C</span>
+                            </div>
+                            <div class="dashboard-temperature-graph-bar-item">
+                                <span class="dashboard-temperature-graph-bar" style="--bar-height: 50%"></span>
+                                <span class="dashboard-temperature-graph-label">08h</span>
+                                <span class="dashboard-temperature-graph-value">25°C</span>
+                            </div>
+                            <div class="dashboard-temperature-graph-bar-item">
+                                <span class="dashboard-temperature-graph-bar" style="--bar-height: 75%"></span>
+                                <span class="dashboard-temperature-graph-label">12h</span>
+                                <span class="dashboard-temperature-graph-value">30°C</span>
+                            </div>
+                            <div class="dashboard-temperature-graph-bar-item">
+                                <span class="dashboard-temperature-graph-bar" style="--bar-height: 90%"></span>
+                                <span class="dashboard-temperature-graph-label">16h</span>
+                                <span class="dashboard-temperature-graph-value">32°C</span>
+                            </div>
+                            <div class="dashboard-temperature-graph-bar-item">
+                                <span class="dashboard-temperature-graph-bar" style="--bar-height: 70%"></span>
+                                <span class="dashboard-temperature-graph-label">20h</span>
+                                <span class="dashboard-temperature-graph-value">28°C</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <article class="dashboard-alerts-container">
+                <h3 class="dashboard-alerts-title">Alertes Météo</h3>
+                <div class="dashboard-alert-card-container">
+                    <span class="dashboard-alert-icon">⚠️</span>
+                    <div class="dashboard-alert-content-wrapper">
+                        <p class="dashboard-alert-message">Fort ensoleillement prévu entre 12h et 16h</p>
+                        <p class="dashboard-alert-recommendation">Protégez-vous et hydratez-vous</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="dashboard-footer-main-container">
+        <div class="dashboard-footer-content-wrapper">
+            <p class="dashboard-footer-copyright-text">&copy; 2026 Météo Villes Africaines. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/api-config.js"></script>
+    <script src="js/api-service.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
