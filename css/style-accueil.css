@@ -1,9 +1,4 @@
-/* ========================================
-   MÉTÉO VILLES AFRICAINES - PAGE D'ACCUEIL
-   Charte Graphique Officielle - Nouveau Design
-   ======================================== */
 
-/* --- VARIABLES CSS --- */
 :root {
     --accueil-couleur-fond-principal: #0E1628;
     --accueil-couleur-fond-secondaire: #1E3A5F;
@@ -18,14 +13,14 @@
     --accueil-transition-douce: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* --- RESET CSS --- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* --- STYLES GÉNÉRAUX --- */
+
 body {
     font-family: var(--accueil-police-corps);
     background-color: var(--accueil-couleur-fond-principal);
@@ -45,7 +40,7 @@ a {
     transition: var(--accueil-transition-douce);
 }
 
-/* --- HEADER & NAVIGATION --- */
+
 .accueil-header-main-container {
     background-color: rgba(14, 22, 40, 0.95);
     backdrop-filter: blur(10px);
@@ -109,14 +104,14 @@ a {
     background-color: rgba(56, 189, 248, 0.1);
 }
 
-/* --- CONTENU PRINCIPAL --- */
+
 .accueil-main-content-wrapper {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 2rem 3rem;
 }
 
-/* --- HERO SECTION --- */
+
 .accueil-hero-banner-section {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -277,7 +272,7 @@ a {
     margin-top: 0.5rem;
 }
 
-/* --- SECTIONS GÉNÉRIQUES --- */
+
 .accueil-section-header-container {
     text-align: center;
     margin-bottom: 3rem;
@@ -310,7 +305,7 @@ a {
     margin: 0 auto;
 }
 
-/* --- SERVICES SECTION --- */
+
 .accueil-services-section {
     padding: 4rem 0;
     margin-bottom: 4rem;
@@ -439,7 +434,7 @@ a {
     transition: var(--accueil-transition-douce);
 }
 
-/* --- FEATURES HIGHLIGHT SECTION --- */
+
 .accueil-features-highlight-section {
     padding: 4rem 0;
     margin-bottom: 4rem;
@@ -477,7 +472,7 @@ a {
     line-height: 1.6;
 }
 
-/* --- CITIES PREVIEW SECTION --- */
+
 .accueil-cities-preview-section {
     padding: 4rem 0;
     margin-bottom: 4rem;
@@ -516,7 +511,7 @@ a {
     color: var(--accueil-couleur-texte-principal);
 }
 
-/* --- CTA SECTION --- */
+
 .accueil-cta-section {
     background: linear-gradient(135deg, var(--accueil-couleur-accent-cyan), #2563EB);
     border-radius: 30px;
