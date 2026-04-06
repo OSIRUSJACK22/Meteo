@@ -1,9 +1,4 @@
-/* ========================================
-   MÉTÉO VILLES AFRICAINES - DASHBOARD
-   Charte Graphique Officielle - Design Moderne
-   ======================================== */
 
-/* --- VARIABLES CSS --- */
 :root {
     --dashboard-couleur-fond-principal: #0E1628;
     --dashboard-couleur-fond-secondaire: #1E3A5F;
@@ -17,15 +12,11 @@
     --dashboard-police-corps: 'DM Sans', sans-serif;
     --dashboard-transition-douce: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* --- RESET CSS --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* --- STYLES GÉNÉRAUX --- */
 body {
     font-family: var(--dashboard-police-corps);
     background-color: var(--dashboard-couleur-fond-principal);
@@ -44,7 +35,7 @@ a {
     transition: var(--dashboard-transition-douce);
 }
 
-/* --- HEADER & NAVIGATION --- */
+
 .dashboard-header-main-container {
     background-color: rgba(14, 22, 40, 0.95);
     backdrop-filter: blur(10px);
@@ -108,7 +99,7 @@ a {
     background-color: rgba(56, 189, 248, 0.1);
 }
 
-/* --- LAYOUT PRINCIPAL --- */
+
 .dashboard-main-content-wrapper {
     display: flex;
     max-width: 1400px;
@@ -117,8 +108,6 @@ a {
     gap: 2rem;
     min-height: calc(100vh - 80px);
 }
-
-/* --- SIDEBAR --- */
 .dashboard-sidebar-city-selector {
     width: 280px;
     flex-shrink: 0;
@@ -169,8 +158,6 @@ a {
     border-color: var(--dashboard-couleur-accent-cyan);
     box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
 }
-
-/* --- CONTENU PRINCIPAL --- */
 .dashboard-content-main-area {
     flex: 1;
     display: flex;
@@ -198,8 +185,6 @@ a {
     font-size: 1rem;
     color: var(--dashboard-couleur-texte-muted);
 }
-
-/* --- CARTE MÉTÉO PRINCIPALE --- */
 .dashboard-weather-main-grid {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
@@ -312,7 +297,7 @@ a {
     color: var(--dashboard-couleur-accent-cyan);
 }
 
-/* --- WIDGETS --- */
+
 .dashboard-widgets-main-container {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
@@ -368,8 +353,6 @@ a {
     font-size: 0.9rem;
     color: var(--dashboard-couleur-texte-muted);
 }
-
-/* --- GRAPHIQUE TEMPÉRATURES --- */
 .dashboard-temperature-graph-container {
     background: linear-gradient(135deg, var(--dashboard-couleur-fond-secondaire), var(--dashboard-couleur-fond-tertiaire));
     border-radius: 20px;
@@ -424,8 +407,6 @@ a {
     font-weight: 700;
     color: var(--dashboard-couleur-accent-cyan);
 }
-
-/* --- ALERTES --- */
 .dashboard-alerts-container {
     background: linear-gradient(135deg, var(--dashboard-couleur-fond-secondaire), var(--dashboard-couleur-fond-tertiaire));
     border-radius: 20px;
@@ -467,8 +448,6 @@ a {
     font-size: 0.9rem;
     color: var(--dashboard-couleur-texte-muted);
 }
-
-/* --- FOOTER --- */
 .dashboard-footer-main-container {
     background-color: var(--dashboard-couleur-fond-secondaire);
     padding: 2rem;
@@ -485,8 +464,6 @@ a {
     color: var(--dashboard-couleur-texte-muted);
     font-size: 0.9rem;
 }
-
-/* --- RESPONSIVE --- */
 @media (max-width: 1024px) {
     .dashboard-main-content-wrapper {
         flex-direction: column;
