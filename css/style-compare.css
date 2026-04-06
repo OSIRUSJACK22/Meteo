@@ -1,9 +1,4 @@
-/* ========================================
-   MÉTÉO VILLES AFRICAINES - PAGE COMPARAISON
-   Charte Graphique Officielle - Design Moderne
-   ======================================== */
 
-/* --- VARIABLES CSS --- */
 :root {
     --compare-couleur-fond-principal: #0E1628;
     --compare-couleur-fond-secondaire: #1E3A5F;
@@ -18,14 +13,14 @@
     --compare-transition-douce: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* --- RESET CSS --- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* --- STYLES GÉNÉRAUX --- */
+
 body {
     font-family: var(--compare-police-corps);
     background-color: var(--compare-couleur-fond-principal);
@@ -44,7 +39,7 @@ a {
     transition: var(--compare-transition-douce);
 }
 
-/* --- HEADER & NAVIGATION --- */
+
 .compare-header-main-container {
     background-color: rgba(14, 22, 40, 0.95);
     backdrop-filter: blur(10px);
@@ -108,14 +103,14 @@ a {
     background-color: rgba(56, 189, 248, 0.1);
 }
 
-/* --- CONTENU PRINCIPAL --- */
+
 .compare-main-content-wrapper {
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-/* --- CONTRÔLES --- */
+
 .compare-controls-section {
     margin-bottom: 3rem;
     text-align: center;
@@ -200,7 +195,7 @@ a {
     box-shadow: 0 8px 30px rgba(56, 189, 248, 0.4);
 }
 
-/* --- RÉSULTATS --- */
+
 .compare-results-section {
     margin-bottom: 3rem;
 }
@@ -336,7 +331,7 @@ a {
     color: var(--compare-couleur-accent-cyan);
 }
 
-/* --- DIFFÉRENCES --- */
+
 .compare-differences-section {
     margin-bottom: 3rem;
 }
@@ -417,7 +412,7 @@ a {
     border-radius: 10px;
 }
 
-/* --- RECOMMANDATION --- */
+
 .compare-recommendation-section {
     margin-bottom: 2rem;
 }
@@ -471,7 +466,6 @@ a {
     border: 1px solid rgba(56, 189, 248, 0.2);
 }
 
-/* --- FOOTER --- */
 .compare-footer-main-container {
     background-color: var(--compare-couleur-fond-secondaire);
     padding: 2rem;
@@ -490,7 +484,7 @@ a {
     font-size: 0.9rem;
 }
 
-/* --- RESPONSIVE --- */
+
 @media (max-width: 1024px) {
     .compare-cards-main-container {
         grid-template-columns: 1fr;
