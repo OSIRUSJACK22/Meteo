@@ -1,9 +1,4 @@
-/* ========================================
-   MÉTÉO VILLES AFRICAINES - PAGE CARTE
-   Charte Graphique Officielle - Design Moderne
-   ======================================== */
 
-/* --- VARIABLES CSS --- */
 :root {
     --map-couleur-fond-principal: #0E1628;
     --map-couleur-fond-secondaire: #1E3A5F;
@@ -18,14 +13,12 @@
     --map-transition-douce: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* --- RESET CSS --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* --- STYLES GÉNÉRAUX --- */
 body {
     font-family: var(--map-police-corps);
     background-color: var(--map-couleur-fond-principal);
@@ -44,7 +37,6 @@ a {
     transition: var(--map-transition-douce);
 }
 
-/* --- HEADER & NAVIGATION --- */
 .map-header-main-container {
     background-color: rgba(14, 22, 40, 0.95);
     backdrop-filter: blur(10px);
@@ -107,15 +99,11 @@ a {
     color: var(--map-couleur-accent-cyan);
     background-color: rgba(56, 189, 248, 0.1);
 }
-
-/* --- CONTENU PRINCIPAL --- */
 .map-main-content-wrapper {
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem;
 }
-
-/* --- CONTRÔLES --- */
 .map-controls-section {
     margin-bottom: 2rem;
     display: flex;
@@ -195,8 +183,6 @@ a {
     border-color: var(--map-couleur-accent-cyan);
     font-weight: 700;
 }
-
-/* --- CARTE INTERACTIVE --- */
 .map-interactive-container {
     margin-bottom: 2rem;
 }
@@ -216,8 +202,6 @@ a {
     border-radius: 18px;
     z-index: 1;
 }
-
-/* Personnalisation de Leaflet */
 .leaflet-container {
     font-family: var(--map-police-corps);
     background: #1a2a3a;
@@ -252,8 +236,6 @@ a {
 .leaflet-control-zoom-out:hover {
     background: var(--map-couleur-fond-tertiaire) !important;
 }
-
-/* Marqueurs personnalisés */
 .custom-marker {
     background: #38BDF8;
     border: 3px solid #F97316;
@@ -275,8 +257,6 @@ a {
         box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
     }
 }
-
-/* --- POPUP HTML --- */
 .map-popup-info-container {
     position: absolute;
     top: 50%;
@@ -404,8 +384,6 @@ a {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(56, 189, 248, 0.4);
 }
-
-/* --- FOOTER --- */
 .map-footer-main-container {
     background-color: var(--map-couleur-fond-secondaire);
     padding: 2rem;
@@ -423,8 +401,6 @@ a {
     color: var(--map-couleur-texte-muted);
     font-size: 0.9rem;
 }
-
-/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .map-header-main-container {
         padding: 1rem;
