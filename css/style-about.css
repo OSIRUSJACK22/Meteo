@@ -1,9 +1,3 @@
-/* ========================================
-   MÉTÉO VILLES AFRICAINES - PAGE À PROPOS
-   Charte Graphique Officielle - Design Moderne
-   ======================================== */
-
-/* --- VARIABLES CSS --- */
 :root {
     --about-couleur-fond-principal: #0E1628;
     --about-couleur-fond-secondaire: #1E3A5F;
@@ -17,15 +11,11 @@
     --about-police-corps: 'DM Sans', sans-serif;
     --about-transition-douce: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* --- RESET CSS --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* --- STYLES GÉNÉRAUX --- */
 body {
     font-family: var(--about-police-corps);
     background-color: var(--about-couleur-fond-principal);
@@ -43,8 +33,6 @@ a {
     color: inherit;
     transition: var(--about-transition-douce);
 }
-
-/* --- HEADER & NAVIGATION --- */
 .about-header-main-container {
     background-color: rgba(14, 22, 40, 0.95);
     backdrop-filter: blur(10px);
@@ -107,15 +95,11 @@ a {
     color: var(--about-couleur-accent-cyan);
     background-color: rgba(56, 189, 248, 0.1);
 }
-
-/* --- CONTENU PRINCIPAL --- */
 .about-main-content-wrapper {
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem;
 }
-
-/* --- HERO SECTION --- */
 .about-hero-section {
     background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(30, 58, 95, 0.5));
     border-radius: 30px;
@@ -158,8 +142,6 @@ a {
     color: var(--about-couleur-texte-secondaire);
     line-height: 1.8;
 }
-
-/* --- SECTIONS GÉNÉRIQUES --- */
 .about-section-header-container {
     text-align: center;
     margin-bottom: 3rem;
@@ -191,8 +173,6 @@ a {
     max-width: 700px;
     margin: 0 auto;
 }
-
-/* --- DESCRIPTION --- */
 .about-description-section {
     margin-bottom: 4rem;
 }
@@ -214,8 +194,6 @@ a {
 .about-description-text:last-child {
     margin-bottom: 0;
 }
-
-/* --- FONCTIONNALITÉS --- */
 .about-features-section {
     margin-bottom: 4rem;
 }
@@ -285,8 +263,6 @@ a {
     color: var(--about-couleur-texte-secondaire);
     line-height: 1.7;
 }
-
-/* --- TECHNOLOGIES --- */
 .about-tech-section {
     margin-bottom: 4rem;
 }
@@ -338,8 +314,6 @@ a {
 .about-tech-item:hover {
     color: var(--about-couleur-accent-cyan);
 }
-
-/* --- ÉQUIPE --- */
 .about-team-section {
     margin-bottom: 4rem;
 }
@@ -387,8 +361,6 @@ a {
     font-size: 1rem;
     color: var(--about-couleur-texte-muted);
 }
-
-/* --- CONTACT --- */
 .about-contact-section {
     margin-bottom: 3rem;
 }
@@ -441,8 +413,6 @@ a {
     color: var(--about-couleur-accent-cyan);
     font-weight: 700;
 }
-
-/* --- FOOTER --- */
 .about-footer-main-container {
     background-color: var(--about-couleur-fond-secondaire);
     padding: 2rem;
@@ -460,8 +430,6 @@ a {
     color: var(--about-couleur-texte-muted);
     font-size: 0.9rem;
 }
-
-/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .about-header-main-container {
         padding: 1rem;
