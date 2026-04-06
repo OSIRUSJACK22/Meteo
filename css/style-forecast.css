@@ -1,9 +1,4 @@
-/* ========================================
-   MÉTÉO VILLES AFRICAINES - PAGE PRÉVISIONS
-   Charte Graphique Officielle - Design Moderne
-   ======================================== */
 
-/* --- VARIABLES CSS --- */
 :root {
     --forecast-couleur-fond-principal: #0E1628;
     --forecast-couleur-fond-secondaire: #1E3A5F;
@@ -18,14 +13,14 @@
     --forecast-transition-douce: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* --- RESET CSS --- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* --- STYLES GÉNÉRAUX --- */
+
 body {
     font-family: var(--forecast-police-corps);
     background-color: var(--forecast-couleur-fond-principal);
@@ -43,8 +38,6 @@ a {
     color: inherit;
     transition: var(--forecast-transition-douce);
 }
-
-/* --- HEADER & NAVIGATION --- */
 .forecast-header-main-container {
     background-color: rgba(14, 22, 40, 0.95);
     backdrop-filter: blur(10px);
@@ -107,15 +100,12 @@ a {
     color: var(--forecast-couleur-accent-cyan);
     background-color: rgba(56, 189, 248, 0.1);
 }
-
-/* --- CONTENU PRINCIPAL --- */
 .forecast-main-content-wrapper {
     max-width: 1400px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-/* --- SÉLECTEUR DE VILLE --- */
 .forecast-city-selector-section {
     margin-bottom: 3rem;
     text-align: center;
@@ -163,7 +153,6 @@ a {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
 }
 
-/* --- RÉSUMÉ --- */
 .forecast-summary-section {
     margin-bottom: 3rem;
 }
@@ -232,8 +221,6 @@ a {
     font-weight: 700;
     color: var(--forecast-couleur-accent-cyan);
 }
-
-/* --- PRÉVISIONS HEBDOMADAIRES --- */
 .forecast-weekly-container {
     margin-bottom: 3rem;
 }
@@ -375,7 +362,6 @@ a {
     font-weight: 500;
 }
 
-/* --- TENDANCES --- */
 .forecast-trends-section {
     margin-bottom: 2rem;
 }
@@ -471,8 +457,6 @@ a {
     color: var(--forecast-couleur-texte-muted);
     font-weight: 700;
 }
-
-/* --- FOOTER --- */
 .forecast-footer-main-container {
     background-color: var(--forecast-couleur-fond-secondaire);
     padding: 2rem;
@@ -490,8 +474,6 @@ a {
     color: var(--forecast-couleur-texte-muted);
     font-size: 0.9rem;
 }
-
-/* --- RESPONSIVE --- */
 @media (max-width: 1024px) {
     .forecast-days-grid-container {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
